@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_home"
+        style="@style/title"
+        android:text="功能列表" />
+
+    <com.itheima.mobilesafe01.view.FocusedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="制作人:你猜是谁,我也不知道,安全卫士就是好呀" />
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>
